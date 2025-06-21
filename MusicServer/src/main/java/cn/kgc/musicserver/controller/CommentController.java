@@ -108,7 +108,7 @@ public class CommentController {
     }
 
     // 删除评论
-    @GetMapping("del")
+    @GetMapping("delete")
     public Result delComment(Integer id){
         boolean b = commentService.removeById(id);
         if(!b){

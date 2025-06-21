@@ -45,7 +45,7 @@ public class SongController {
         System.out.println("pageNo---:"+pageNo);
         QueryWrapper<Song> wrapper = new QueryWrapper<>();
         wrapper.like(search != null, "name", search);
-        wrapper.orderByDesc("id");
+        wrapper.orderByAsc("id");
         IPage<Song> page = new Page<>(pageNo, size);
         page = songService.page(page,wrapper);
         return ResultUtil.returnDataSuccess(page);

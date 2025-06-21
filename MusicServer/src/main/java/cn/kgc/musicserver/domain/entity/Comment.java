@@ -28,7 +28,7 @@ public class Comment implements Serializable {
    private Integer type;
 
    @TableField("song_id")
-   private String songId;
+   private Integer songId;
 
    @TableField("song_list_id")
    private String songListId;

@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 @RequestMapping("/admin")
 public class AdminController {
+
     private final IAdminService adminService;
 
     /**
